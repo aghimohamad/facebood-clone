@@ -2,6 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['upload.wikimedia.org',
+  'platform-lookaside.fbsbx.com',
+  'links.papareact.com',
+  "firebasestorage.googleapis.com"],
+  }
 }
 
 module.exports = nextConfig
