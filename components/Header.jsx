@@ -53,6 +53,7 @@ function Header() {
         <div className='flex items-center sm:space-x-2 justify-end'>
             {/* profile pic */}
             <Image
+            onClick={() => signOut()}
             src={session.user.image}
             width={40}
             height={40}
