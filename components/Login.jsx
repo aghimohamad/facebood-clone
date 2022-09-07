@@ -12,7 +12,7 @@ function Login() {
         objectFit="contain"
         alt='facebook'
         />
-        <h1 onClick={signIn} className='p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer'>login with facebook</h1>
+        <h1 onClick={signIn("facebook", 'https://facebook-clone-three-ruddy.vercel.app/')} className='p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer'>login with facebook</h1>
     </div>
   )
 }
