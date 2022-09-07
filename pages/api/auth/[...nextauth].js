@@ -9,6 +9,5 @@ export default NextAuth({
         clientSecret: process.env.FACEBOOK_SECRET
       })
     // ...add more providers here
-  ],
-  secret: process.env.SECRET
+  ]
 }) 
