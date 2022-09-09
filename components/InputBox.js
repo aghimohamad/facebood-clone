@@ -83,7 +83,7 @@ function InputBox() {
             ref={inputRef}
             placeholder={`What's on your mind, ${session.user.name}?`} />
             <button hidden type='submit' onClick={sendPost}>Submit</button>
-            <PaperAirplaneIcon onClick={sendPost} className="h-5 text-blue-500" />
+            <PaperAirplaneIcon onClick={sendPost} className="h-7 mt-3 cursor-pointer text-blue-500" />
           </form>
           {imageToPost && (
             <div onClick={ removeImage  } className=" flex flex-col filter hover:brightness-110 transition duration-150 hover:scale-105 cursor-pointer">
