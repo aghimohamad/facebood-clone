@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { useSession } from 'next-auth/react'
 import { EmojiHappyIcon } from '@heroicons/react/outline'
-import { VideoCameraIcon, CameraIcon } from '@heroicons/react/solid'
+import { VideoCameraIcon, CameraIcon, PaperAirplaneIcon } from '@heroicons/react/solid'
 import { useRef } from 'react'
 import { db, storage } from '../firebase'
 import firebase from 'firebase/app';
@@ -83,6 +83,7 @@ function InputBox() {
             ref={inputRef}
             placeholder={`What's on your mind, ${session.user.name}?`} />
             <button hidden type='submit' onClick={sendPost}>Submit</button>
+            <PaperAirplaneIcon onClick={sendPost} className="h-5 text-blue-500" />
           </form>
           {imageToPost && (
             <div onClick={ removeImage  } className=" flex flex-col filter hover:brightness-110 transition duration-150 hover:scale-105 cursor-pointer">
